@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="ToDo">
+            <h1 class="ToDo-title">Yet Another To Do</h1>
+            <div class="ToDo-controls">
+                <input class="ToDo-textfield" type="textfield" data-target="add-input"><button class="ToDo-button" data-target="add-button">Add</button>
+            </div>
+            <p>Drag and drop to re-order and complete tasks!</p>
+            <div class="ToDo-alert is-hidden" data-target="alert"></div>
+            <h2 class="ToDo-subtitle">To Do</h2>
+            <ul class="ToDo-list ToDo-list--todo" data-target="todo-list"></ul>
+            <h2 class="ToDo-subtitle">Done</h2>
+            <ul class="ToDo-list ToDo-list--done"  data-target="done-list"></ul>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
