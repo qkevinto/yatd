@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "dragula": "^3.5.2",
+    "systemjs": "^0.19.5"
   }
 }
