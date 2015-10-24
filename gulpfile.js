@@ -28,7 +28,7 @@ gulp.task('babel', function() {
   return gulp.src(paths.js.source)
     .pipe(babel())
     .pipe(gulp.dest(paths.js.dest));
-0});
+});
 
 // CSS
 gulp.task('css', function() {
