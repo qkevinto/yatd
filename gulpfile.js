@@ -17,10 +17,10 @@ gulp.task('babel', function() {
   return gulp.src('./js/source/*.js')
       .pipe(babel())
       .pipe(gulp.dest('./js/'));
-});
+0});
 
-// CSS
-gulp.task('css', function() {
+// Sass
+gulp.task('sass', function() {
   return gulp.src('./css/source/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
@@ -31,15 +31,15 @@ gulp.task('css', function() {
 gulp.task('js', ['lint', 'babel'], browserSync.reload);
 
 // Serve
-gulp.task('serve', ['lint'], function () {
+gulp.task('serve', ['js', 'sass'], function () {
   browserSync({
     server: {
       baseDir: "./"
     }
   });
 
-  gulp.watch('./js/*.js', ['js']);
-  gulp.watch('./css/*.scss', ['css']);
+  gulp.watch('./js/source/*.js', ['js']);
+  gulp.watch('./css/source/*.scss', ['sass']);
 });
 
 // Default
