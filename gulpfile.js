@@ -5,6 +5,7 @@ var babel = require('gulp-babel');
 var sass = require('gulp-sass');
 
 var paths = {
+  base: './',
   js: {
     source: './js/source/*.js',
     dest: './js'
@@ -12,6 +13,9 @@ var paths = {
   css: {
     source: './css/source/**/*.scss',
     dest: './css'
+  },
+  html: {
+    source: './*.html'
   }
 }
 
@@ -48,12 +52,13 @@ gulp.task('build', ['css', 'js']);
 gulp.task('serve', ['build'], function () {
   browserSync({
     server: {
-      baseDir: "./"
+      baseDir: paths.base
     }
   });
 
   gulp.watch(paths.js.source, ['js']);
   gulp.watch(paths.css.source, ['css']);
+  gulp.watch(paths.html.source, browserSync.reload);
 });
 
 // Default
