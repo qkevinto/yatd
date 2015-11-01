@@ -30,7 +30,9 @@ gulp.task('lint', function() {
 // Babel
 gulp.task('babel', function() {
   return gulp.src(paths.js.source)
-    .pipe(babel())
+    .pipe(babel({
+        presets: ['babel-preset-es2015']
+    }))
     .pipe(gulp.dest(paths.js.dest));
 });
 
