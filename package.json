@@ -24,7 +24,6 @@
     "jspm": "^0.16.14"
   },
   "dependencies": {
-    "dragula": "^3.5.2",
     "systemjs": "^0.19.5"
   },
   "jspm": {
