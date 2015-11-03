@@ -6,6 +6,10 @@
     "type": "git",
     "url": "https://git.freelancer.com/kto/js-workspace"
   },
+  "scripts": {
+    "setup": "npm install && jspm install",
+    "serve": "gulp"
+  },
   "keywords": [
     "javascript",
     "workspace"
