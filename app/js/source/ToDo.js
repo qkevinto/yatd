@@ -1,5 +1,9 @@
-import {Model} from 'Model';
+// Imports dependencies
+import {Model} from './Model';
 import dragula from 'dragula';
+
+// Imports dragula's css
+import 'dragula/dist/dragula.css!';
 
 /**
  * Creates a new ToDo.

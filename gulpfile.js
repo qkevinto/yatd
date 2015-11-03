@@ -7,12 +7,12 @@ var sass = require('gulp-sass');
 var paths = {
   base: './',
   js: {
-    source: './js/source/*.js',
-    dest: './js'
+    source: './app/js/source/*.js',
+    dest: './app/js'
   },
   css: {
-    source: './css/source/**/*.scss',
-    dest: './css'
+    source: './app/css/source/**/*.scss',
+    dest: './app/css'
   },
   html: {
     source: './*.html'

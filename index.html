@@ -6,8 +6,7 @@
         <title>Yet Another To Do</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="node_modules/dragula/dist/dragula.css">
+        <link rel="stylesheet" href="app/css/main.css">
     </head>
     <body>
         <div class="ToDo">
@@ -22,12 +21,10 @@
             <h2 class="ToDo-subtitle">Done</h2>
             <ul class="ToDo-list ToDo-list--done"  data-target="done-list"></ul>
         </div>
-
-        <script src="node_modules/dragula/dist/dragula.min.js"></script>
         <script src="jspm_packages/system.js"></script>
         <script src="config.js"></script>
         <script>
-          System.import('./js/app.js');
+          System.import('app/js/app.js');
         </script>
     </body>
 </html>

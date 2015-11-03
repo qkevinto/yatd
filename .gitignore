@@ -1,4 +1,4 @@
 node_modules
 jspm_packages
-js/*.js
-css/*.css
+app/js/*.js
+app/css/*.css

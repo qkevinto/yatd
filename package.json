@@ -28,7 +28,10 @@
     "systemjs": "^0.19.5"
   },
   "jspm": {
-    "dependencies": {},
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.19",
+      "dragula": "npm:dragula@^3.5.2"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
